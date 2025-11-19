@@ -1,0 +1,83 @@
+/* Achievements grid and columns — same as before */
+.achievements-box {
+  background: #1a1a1a;
+  border: 2px solid #ff1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 35px 0;
+}
+
+/* Section Title inside the box */
+.achievements-box .achievements-title {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  color: #ffd966;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.achievements-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffd966; /* gold */
+  text-align: center;
+  margin: 30px 0 20px;
+  padding: 12px;
+  border-bottom: 2px solid #ff1a1a; /* red */
+  letter-spacing: 2px;
+  background: #111; /* pure dark background — no pink */
+  border-radius: 6px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements-list li {
+  font-size: 1rem;
+  padding-left: 32px;
+  position: relative;
+  color: #fff;
+  margin-bottom: 12px;
+  transition: 0.3s ease;
+}
+
+.achievements-list li::before {
+  content: "⭐";
+  position: absolute;
+  left: 3px;
+  font-size: 1.3rem;
+  color: #ffd966;
+}
+
+.achievements-list li:hover {
+  transform: translateX(6px);
+  color: #ffd966;
+}
+
+.achievements-column {
+  background: #1a1a1a;
+  border-left: 4px solid #ff1a1a;
+  padding: 18px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.achievements-column:hover {
+  background: #262626;
+  transform: translateY(-4px);
+}
