@@ -1,0 +1,102 @@
+/* SECTION TITLES — fixed, no pink */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffd966; /* gold */
+  text-align: center;
+  margin: 30px 0 20px;
+  padding: 12px;
+  border-bottom: 2px solid #ff1a1a; /* red */
+  letter-spacing: 2px;
+  background: #111; /* pure dark background — no pink */
+  border-radius: 6px;
+}
+
+/* --- UNIFIED SECTION BOX STYLE (Matches screenshot) --- */
+.section-box {
+  background: #1a1a1a;       /* Dark gold/black tone like screenshot */
+  border: 2px solid #ff1a1a; /* Red border underline */
+  padding: 25px;
+  border-radius: 10px;
+  margin: 35px 0;
+}
+
+/* Section Title inside the box */
+.section-box .section-title {
+  background: none;          /* remove gradient */
+  border: none;              /* remove bottom border */
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  color: #ffd966;            /* gold text */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* PARAGRAPHS */
+.profile-text {
+  font-size: 1rem;
+  text-align: center;
+  color: #e6e6e6;
+  padding: 10px 0;
+}
+
+/* SKILLS — clean dark boxes */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  padding-left: 32px;
+  position: relative;
+  color: #fff;
+  margin-bottom: 12px;
+  transition: 0.3s ease;
+}
+
+.skills-list li::before {
+  content: "🥊";
+  position: absolute;
+  left: 3px;
+  font-size: 1.3rem;
+}
+
+.skills-list li:hover {
+  transform: translateX(6px);
+  color: #ffd966; /* gold hover */
+}
+
+/* TECHNICAL SKILLS BOXES */
+.tech-category {
+  background: #1a1a1a; /* dark, no pink */
+  border-left: 4px solid #ff1a1a; /* red */
+  padding: 18px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.tech-category:hover {
+  transform: translateY(-4px);
+  background: #262626; /* dark gray */
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffd966; /* gold */
+  margin-bottom: 8px;
+}
+
+.tech-items {
+  color: #e8e8e8;
+}

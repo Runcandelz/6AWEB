@@ -1,0 +1,50 @@
+/* --------------------------------------------------------
+   HEADER
+--------------------------------------------------------- */
+.cv-header {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.cv-content {
+  text-align: center;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ff1a1a;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px rgba(255,0,0,0.6);
+}
+
+.nickname {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffd966;
+  text-shadow: 0 0 8px rgba(255,215,0,0.4);
+}
+
+.contact-info {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #f0f0f0;
+}
+
+.contact-item strong {
+  color: #ffd966;
+}
+
+.contact-item a {
+  color: #ff1a1a;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #ffd966;
+  transform: scale(1.1);
+}
