@@ -1,0 +1,61 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="data-binding">Data Binding</a>
+  <a routerLink="directives">Directives</a>
+  <a routerLink="bootstrap">Bootstrap</a>
+  <a routerLink="tailwind">Tailwind</a>
+</nav>
+
+<router-outlet />
+
+<style>
+  nav {
+  background-color: #000; /* Black base */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #f6d20a; /* Law yellow */
+}
+
+  nav a {
+    color: #f6d20a; /* Signature yellow */
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    border: 2px solid transparent;
+  }
+
+  nav a:hover {
+    background-color: #f6d20a;
+    color: #000;
+    transform: scale(1.08);
+    border-color: #fff; /* white highlight (Law's hat theme) */
+  }
+
+  nav a.active {
+    background-color: #fff; /* White spot to mimic his hat */
+    color: #000;
+    border-color: #f6d20a;
+    font-weight: 900;
+  }
+</style>
+
+
+<router-outlet />

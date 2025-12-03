@@ -1,0 +1,63 @@
+/* Background */
+.law-bg {
+  background-color: #101010;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+  background-size: 40px 40px; /* gives a subtle "Law hat dots" pattern */
+}
+
+/* Navbar */
+.law-navbar {
+  background-color: #000;
+  border-bottom: 3px solid #f6d20a;
+}
+
+.law-title {
+  color: #f6d20a;
+  letter-spacing: 1px;
+}
+
+.law-link {
+  color: #f6d20a !important;
+  font-weight: 600;
+}
+
+.law-link:hover,
+.law-link.active {
+  color: #000 !important;
+  background-color: #f6d20a;
+  border-radius: 5px;
+}
+
+/* Button */
+.law-btn {
+  background-color: #f6d20a;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.law-btn:hover {
+  transform: scale(1.05);
+  background-color: #ffe46f;
+}
+
+/* Cards */
+.law-card {
+  background-color: #181818;
+  border: 2px solid #f6d20a;
+  border-radius: 10px;
+  color: #fff;
+  transition: transform 0.25s ease;
+}
+
+.law-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(246, 210, 10, 0.4);
+}
+
+/* Footer */
+.law-footer {
+  background-color: #000;
+  border-top: 3px solid #f6d20a;
+}
